@@ -1,0 +1,246 @@
+/****************************************************** 
+-------------------------------------------------------
+*****                Paramétrages                 *****
+-------------------------------------------------------
+******************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --grey: #d9d9d9;
+  --black: #000000;
+  --red: #fa4238;
+  --purple: #691cad;
+  --brown: #3c252b;
+
+  --title: 'Open Sans';
+  --paragraphe: 'Lato';
+}
+
+body {
+  background-color: var(--white);
+}
+
+.primary {
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.secondary {
+  background-color: var(--black);
+  margin: 0 40px;
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.tertiary {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+/****************************************************** 
+-------------------------------------------------------
+*****               En tête + menus               *****
+-------------------------------------------------------
+******************************************************/
+
+header .flex {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--white);
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: 0px 2px 10px 5px var(--black);
+}
+
+header .flex .burger-menu #link {
+  display: block;
+}
+
+header .flex .burger-menu #link #burger {
+  width: 30px;
+  height: 2px;
+  background: var(--black);
+  display: inline-block;
+  top: -5px;
+  position: relative;
+  text-align: left;
+}
+
+header .flex .burger-menu #link #burger::before,
+header .flex .burger-menu #link #burger::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: var(--black);
+  display: inline-block;
+  position: absolute;
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+
+header .flex .burger-menu #link #burger::before {
+  top: -7px;
+}
+
+header .flex .burger-menu #link #burger::after {
+  top: 7px;
+}
+
+header .flex .burger-menu #link #burger.open {
+  background: transparent;
+}
+
+header .flex .burger-menu #link #burger.open::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+header .flex .burger-menu #link #burger.open::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+main ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  top: 120px;
+  transition: .4s;
+  transform: translateX(-100%);
+  height: 100%;
+  background-color: var(--purple);
+}
+
+main ul.open {
+  transform: translateX(0%);
+  transition: .4s;
+}
+
+main ul li {
+  margin: 10px 20px;
+  list-style: none;
+}
+
+main ul li a {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  text-decoration: none;
+  color: var(--white);
+}
+
+main {
+  padding-top: 160px;
+}
+
+/****************************************************** 
+-------------------------------------------------------
+*****               Expérience VR                 *****
+-------------------------------------------------------
+******************************************************/
+
+#experienceVR {
+  padding: 0 20px;
+  text-align: center;
+}
+
+#experienceVR .imgMiddle {
+  width: 100%;
+}
+
+#experienceVR .container {
+  margin: 40px auto;
+}
+
+#experienceVR .container .flex {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#experienceVR .container .flex img {
+  border-radius: 20px;
+}
+
+#experienceVR .container .flex p {
+  width: 60%;
+}
+
+/****************************************************** 
+-------------------------------------------------------
+*****               Pied de page                  *****
+-------------------------------------------------------
+******************************************************/
+
+footer {
+  margin-top: 40px;
+}
+
+footer .annonce {
+  background-color: var(--grey);
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  padding: 20px 0;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+footer .grid a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+footer .grid .center {
+  justify-self: center;
+}
+
+footer .grid ul {
+  list-style: none;
+}
+
+footer .grid li {
+  margin: 5px 0;
+}
+
+footer .grid .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .grid .row li {
+  margin: 0 10px;
+}
+
+footer .grid .logo {
+  text-align: center;
+}
