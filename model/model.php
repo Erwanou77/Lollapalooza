@@ -20,8 +20,8 @@ function contacte($nom, $prenom, $mail, $message)
     $insert->bindParam(':message', $message);
     $insert->execute();
 
-    $from = "portfolio@launayerwan.fr";
-    $to = "erwan.launay77@gmail.com";
+    $from = "erwan.launay77@gmail.com";
+    $to = "chamontin.lucas@gmail.com";
     $subject = "Contact portfolio";
 
     $headers = 'From: <' . $from . '>' . "\r\n";
