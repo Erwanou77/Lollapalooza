@@ -20,15 +20,15 @@
                 <a id="link" href="#"><span id="burger"></span></a>
             </div>
             <a href="/lollapalooza/"><img src="https://dummyimage.com/200x100/e0e0e0/000000.png" alt=""></a>
-            <a href="#" class="primary">Se connecter</a>
+            <a href="connexion" class="primary">Se connecter</a>
         </div>
     </header>
     <main>
         <ul id="menu">
             <li><a href="experience-realite-virtuel">Expérience Réalité</a></li>
-            <li><a href="#!">Billeterie</a></li>
-            <li><a href="#!">Infos Pratiques</a></li>
-            <li><a href="#!">Partenaires</a></li>
+            <li><a href="billet">Billeterie</a></li>
+            <li><a href="info-pratique">Infos Pratiques</a></li>
+            <li><a href="partenaires">Partenaires</a></li>
             <li><a href="contact">Contact</a></li>
         </ul>
         <?php echo $page ?>
@@ -41,11 +41,12 @@
             <ul class="center">
                 <li><a href="/lollapalooza/">Accueil</a></li>
                 <li><a href="#!">Evenement</a></li>
-                <li><a href="#!">Billeterie</a></li>
+                <li><a href="billet">Billeterie</a></li>
                 <li><a href="experience-realite-virtuel">Expérience VR</a></li>
+                <li><a href="partenaires">Partenaires</a></li>
             </ul>
             <ul class="row center">
-                <li><a href="#!">S'inscrire</a></li>
+                <li><a href="inscription">S'inscrire</a></li>
                 <li><a href="contact">Contact</a></li>
                 <li><a href="#!">Mentions Légales</a></li>
             </ul>

@@ -2,7 +2,7 @@
 
 ob_start(); ?>
 
-<h1>Cette page sera la page d'accueil</h1>
+<h1>Cette page sera la page de Connexion lorsque l'on clique sur se connecter</h1>
 
 <?php $page = ob_get_clean();
 
