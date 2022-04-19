@@ -12,6 +12,7 @@ function dbConnect()
 
 function contacte($nom, $prenom, $mail, $message)
 {
+    //insertion bdd
     $db = dbConnect();
     $insert = $db->prepare("CALL contact(:nom,:prenom,:mail,:message);");
     $insert->bindParam(':nom', $nom);
@@ -19,6 +20,8 @@ function contacte($nom, $prenom, $mail, $message)
     $insert->bindParam(':mail', $mail);
     $insert->bindParam(':message', $message);
     $insert->execute();
+
+    //Envoi du mail
 
     $from = "erwan.launay77@gmail.com";
     $to = "chamontin.lucas@gmail.com";
