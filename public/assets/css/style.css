@@ -31,6 +31,8 @@ body {
   padding: 15px 20px;
   border-radius: 10px;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 
 .secondary {
@@ -192,6 +194,45 @@ main {
 
 /****************************************************** 
 -------------------------------------------------------
+*****           Formulaire de contact             *****
+-------------------------------------------------------
+******************************************************/
+
+#contact form{
+  background-color: var(--grey);
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0 auto;  
+}
+
+#contact input,#contact textarea{
+  border: 2px solid var(--purple);
+  border-radius: 6px;
+  padding: 6px;
+  outline: none;
+  resize: vertical;
+}
+
+#contact input:focus,#contact textarea:focus{
+  border: 2px solid var(--brown);
+}
+
+#contact form .form-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact form .input-group{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#contact form textarea{
+  margin-bottom: 20px;
+}
+/****************************************************** 
+-------------------------------------------------------
 *****               Pied de page                  *****
 -------------------------------------------------------
 ******************************************************/
@@ -243,4 +284,16 @@ footer .grid .row li {
 
 footer .grid .logo {
   text-align: center;
+}
+
+/****************************************************** 
+-------------------------------------------------------
+*****               Media Queries                 *****
+-------------------------------------------------------
+******************************************************/
+
+@media screen and (max-width : 700px) {
+  header .flex, #contact form .form-group{
+    flex-direction: column;
+  }
 }

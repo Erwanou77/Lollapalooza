@@ -2,7 +2,7 @@
 
 try {
     if (isset($_GET['page'])) {
-        if ($_GET['page'] == 'experienceVR') {
+        if ($_GET['page'] == 'experience-realite-virtuel') {
             experienceVR();
         } elseif ($_GET['page'] == 'contact') {
             contact();
