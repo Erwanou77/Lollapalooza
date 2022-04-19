@@ -34,7 +34,7 @@ function contacte($nom, $prenom, $mail, $message)
     $variables['nom'] = $nom;
     $variables['prenom'] = $prenom;
     $variables['mail'] = $mail;
-    $variables['message'] = $message;
+    $variables['message'] = html_entity_decode($message);
 
     $template = file_get_contents("view/templateMail.php");
 

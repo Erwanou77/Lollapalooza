@@ -4,7 +4,7 @@ if (isset($_POST['submit'])) {
     $nom = htmlspecialchars($_POST['nom']);
     $prenom = htmlspecialchars($_POST['prenom']);
     $mail = htmlspecialchars($_POST['mail']);
-    $message = nl2br(htmlspecialchars($_POST['message']));
+    $message = htmlentities(htmlspecialchars($_POST['message']));
 
     if (empty($nom)) {
         $erreur = "Vous devez mettre un nom";
