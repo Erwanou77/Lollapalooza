@@ -25,7 +25,7 @@ function contacte($nom, $prenom, $mail, $message)
 
     $from = "erwan.launay77@gmail.com";
     $to = "chamontin.lucas@gmail.com";
-    $subject = "Contact portfolio";
+    $subject = "Contact lollapalooza";
 
     $headers = 'From: <' . $from . '>' . "\r\n";
     $headers .= "MIME-Version: 1.0" . "\r\n";

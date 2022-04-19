@@ -17,6 +17,7 @@ if (isset($_POST['submit'])) {
     } else {
         contacte($nom, $prenom, $mail, $message);
         $erreur = "Votre message a bien été envoyé";
+        header('Location: contact');
     }
 }
 
