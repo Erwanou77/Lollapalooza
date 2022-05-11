@@ -133,7 +133,8 @@ main ul {
   transition: .4s;
   transform: translateX(-100%);
   height: 100%;
-  background-color: var(--purple);
+  background-image: url("../img/fond-menu.png");
+  background-size: 100% 100%;
 }
 
 main ul.open {
@@ -156,6 +157,45 @@ main ul li a {
 
 main {
   padding-top: 160px;
+}
+
+/****************************************************** 
+-------------------------------------------------------
+*****                  Login                      *****
+-------------------------------------------------------
+******************************************************/
+
+#login {
+  text-align: center;
+  background-image: url("../img/fond-login.png");
+  background-size: 100% 100%;
+}
+
+#login #form-login .group {
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px 60px;
+  background-image: url("../img/lettre.png");
+  background-size: 100% 100%;
+}
+
+#login #form-login .group .input-group {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+#login #form-login .group .input-group label {
+  margin: 20px 0 10px 0;
+}
+
+#login #form-login .group .input-group input {
+  border: none;
+  padding: 15px 0 15px 10px;
+}
+
+#login p {
+  margin: 20px 0;
 }
 
 /****************************************************** 
@@ -198,15 +238,16 @@ main {
 -------------------------------------------------------
 ******************************************************/
 
-#contact form{
+#contact form {
   background-color: var(--grey);
   width: 500px;
   padding: 20px;
   border-radius: 20px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
-#contact input,#contact textarea{
+#contact input,
+#contact textarea {
   border: 2px solid var(--purple);
   border-radius: 6px;
   padding: 6px;
@@ -214,23 +255,26 @@ main {
   resize: vertical;
 }
 
-#contact input:focus,#contact textarea:focus{
+#contact input:focus,
+#contact textarea:focus {
   border: 2px solid var(--brown);
 }
 
-#contact form .form-group{
+#contact form .form-group {
   display: flex;
   justify-content: space-between;
 }
 
-#contact form .input-group{
+#contact form .input-group {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
-#contact form textarea{
+
+#contact form textarea {
   margin-bottom: 20px;
 }
+
 /****************************************************** 
 -------------------------------------------------------
 *****               Pied de page                  *****
@@ -293,7 +337,9 @@ footer .grid .logo {
 ******************************************************/
 
 @media screen and (max-width : 700px) {
-  header .flex, #contact form .form-group{
+
+  header .flex,
+  #contact form .form-group {
     flex-direction: column;
   }
 }
